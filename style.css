@@ -1,0 +1,215 @@
+body{
+    background-color:#202020;
+}
+body,p, ul,li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: montserrat;
+}
+
+h1{
+    text-align:center;
+}
+
+/* containers */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    max-width:none;
+    margin:50px 0;
+    justify-items: center
+}
+#quadro {
+    width: 1240px;
+    max-width: 1240px;
+    min-width: 375px;
+    min-height:720px;
+    padding:0;
+    resize:horizontal;
+    background-color:white;
+    overflow:auto;
+    border-radius:20px;
+    border: solid  white 2px;
+    color:black;
+    font-weight: 900;
+}
+
+#side-bar{
+    width:300px;
+    height:0;
+    background-color:#fff;
+}
+
+
+/* side bar */
+
+
+/* nav bar  */
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color: #6320ee;
+    flex-wrap: wrap;
+    padding: 15px;
+    align-items: center;
+}
+
+a{
+    text-decoration:none;   
+    color:rgb(218, 214, 214);
+    font-size:1.3rem;
+}
+
+a:hover{
+    color:#fff
+}
+
+.menu{
+    display:flex;
+    
+}
+
+.menu li a{
+    display:block;
+    padding:10px
+}
+
+.menu li {
+    margin-left: 10px;
+  }
+
+/* img para exemplo */
+img{
+    max-width: 100%;
+    display: block;}
+
+
+
+/* display flex */
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.flex .div-container{
+    margin:10px;
+    flex: 1 1 300px; 
+    text-align:center;
+}
+
+
+ .div1,.div2,.div3{
+    display:none;}
+
+/* display grid1 */
+
+.grid {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-gap: 20px;
+    padding:10px;
+    text-align:center;
+    font-weight: 900;   
+}
+
+.grid  .div-container:nth-child(n+4){
+   display:grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   align-items: center;
+   text-align: left;
+}
+
+.grid #anuncio{
+    display:block;
+    grid-column:1;
+    grid-row:2/4;
+    text-align: center;
+}
+
+.grid #anuncio .box{
+    height:100%;
+}
+
+
+/* essas classes são aplicadas através do js quando a largura da div for menor de 600px, para uma página normal basta usar uma media query  */ 
+
+.grid-small{
+    grid-template-columns:1fr 1fr !important;
+}
+
+.grid-2-small{
+    display:block !important;
+}
+
+.grid-anuncio-small{
+grid-column:auto !important;
+grid-row: auto !important;
+order: -1;} 
+
+
+/* display grid2 */
+
+
+
+.grid2{
+    display:grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap:20px;
+    padding:10px;
+}
+.sidenav .div-container{
+margin-bottom:10px;
+}
+
+/* essas classes são aplicadas através do js quando a largura da div for menor de 600px, para uma página normal basta usar uma media query  */ 
+
+.grid2-small{
+    grid-template-columns: 1fr;
+}
+
+.sidenav-small{
+    display:flex;
+    overflow:auto;
+}
+
+.sidenav-small-div{
+    flex:1 0 200px;
+    margin: 0 10px; 
+}
+
+
+/* Display grid 3 */
+.grid3{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    padding:10px;
+
+}
+
+.grid3 > .div-container:nth-child(1){
+    grid-row: 1/3;
+
+}
+
+.grid3 .div-container{
+    display:grid;
+}
+
+.grid3 .div-container img{
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self:end;
+}
+
+.grid3 .div-container p{
+    grid-column: 1;
+    grid-row:2;
+    background-color:rgba(0,0,0,0.6);
+    padding:10px;
+    color:white;
+    align-self: end;
+}

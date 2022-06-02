@@ -37,13 +37,48 @@ h1{
 }
 
 #side-bar{
-    width:300px;
-    height:0;
+    width:350px;
+    height: 400px;
     background-color:#fff;
+    border-radius:25px 25px 0 0;
+    text-align:center;
 }
 
 
 /* side bar */
+.fa-solid{
+  font-size: 40px;
+  color:black;
+  margin:10px;
+}
+.fa-solid:hover{
+  color:#6320ee;
+}
+
+.radioBtn{
+display: flex;
+justify-content: space-around;
+}
+
+.form-check-input:checked {
+    background-color: #6320ee;
+    border-color: #6320ee;
+}
+
+.icon-display .fa-solid{
+    font-size:80px;
+    margin:0;
+}
+
+.icon-display{
+    margin:50px 0;
+    display:flex;
+    justify-content: space-around;
+}
+
+.tamanhoAtivo{
+    color:rgb(196, 196, 196);
+}
 
 
 /* nav bar  */
@@ -100,7 +135,7 @@ img{
 }
 
 
- .div1,.div2,.div3{
+ .off{
     display:none;}
 
 /* display grid1 */

@@ -53,20 +53,20 @@ $(".fa-circle-arrow-right").on("click",function(){
 $(".form-check-input").on("click",function(){
 eraTela = tela;
 tela = $("input[name='radioDisplay']:checked").val();
-if (eraTela === tela){
+/* if (eraTela === tela){
     eraTela = 0;
-}
+} */
 mudarTela()
 })
                        
 function mudarTela(){
     if(tela===5){tela=1}
     else if(tela===0){tela=4}
-    $('#radioDisplay'+tela).attr("checked", true)
+    $('#radioDisplay'+tela).prop("checked", true)
+    $('#radioDisplay'+eraTela).prop("checked",false)   
     $("h3").text("Display "+tela)
     $(".div"+tela).removeClass("off");
     $(".div"+eraTela).addClass("off");};
-    $('#radioDisplay'+eraTela).attr("checked", false)
 
 //Muda o tamanho(width) do quadro
 $(".icon-display .fa-solid").on("click",function(e){

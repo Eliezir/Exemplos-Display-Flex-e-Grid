@@ -81,3 +81,11 @@ $(".icon-display .fa-solid").on("click",function(e){
         $(".quadro").css("width",375)
     }
 })
+
+
+
+$(window).on("resize",function(){
+if($(".off").css("display")==="inline"){
+var tela = screen.width;
+$("#quadro").css("width",tela)}
+})

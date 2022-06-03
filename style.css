@@ -248,3 +248,23 @@ margin-bottom:10px;
     color:white;
     align-self: end;
 }
+
+@media (max-width:600px) {
+#side-bar{
+    display:none;
+}
+.off{
+    display:unset;
+}
+#quadro{
+    width:600px;
+}
+
+.container{
+    display:block;
+    margin:0;
+    padding:0;
+
+
+}
+}
